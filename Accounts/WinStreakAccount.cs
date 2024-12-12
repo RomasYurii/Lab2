@@ -21,15 +21,15 @@ namespace laboratorna2.Accounts
 
         public override void WinGame(Game game)
         {
+            int bonus = winStreak >= 3 ? 10 : 0;
+            CurrentRating += bonus;
             winStreak++;
-            int bonus = winStreak > 3 ? 10 : 0;
-            CurrentRating += game.CalculateRating() + bonus;
             base.WinGame(game);
         }
 
         public override void LoseGame(Game game)
         {
-            winStreak = 0; // Скидання серії перемог
+            winStreak = 0; 
             base.LoseGame(game);
         }
     }

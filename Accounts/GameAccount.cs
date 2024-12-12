@@ -35,7 +35,7 @@ namespace laboratorna2.Accounts
         public GameAccount(string userName)
         {
             UserName = userName;
-            CurrentRating = 1; // Початковий рейтинг
+            CurrentRating = 1; 
             GamesCount = 0;
             gamesHistory = new List<Game>();
         }

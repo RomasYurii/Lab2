@@ -12,7 +12,7 @@ namespace laboratorna2.Games
 
         public override int CalculateRating()
         {
-            return 0; // Без рейтингу
+            return 0; 
         }
     }
 }

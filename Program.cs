@@ -16,20 +16,31 @@ namespace lab2
 
             Game game1 = GameFactory.CreateGame("Standard", "Player1", 20);
             Game game2 = GameFactory.CreateGame("Training", "Player2");
-            Game game3 = GameFactory.CreateGame("OnePlayer", "Player3", 15);
+            Game game3 = GameFactory.CreateGame("Standard", "Player2", 30);
 
             player1.WinGame(game2);
             player1.LoseGame(game3);
 
-
             player2.WinGame(game1);
-            player2.LoseGame(game3);
+            player2.LoseGame(game2);
 
             player3.WinGame(game1);
+           // player3.PlayerStats();
+
             player3.WinGame(game2);
+           // player3.PlayerStats();
+
             player3.WinGame(game1);
+           // player3.PlayerStats();
+
             player3.WinGame(game2);
+           // player3.PlayerStats();
+
             player3.LoseGame(game1);
+           // player3.PlayerStats();
+
+            player3.WinGame(game1);
+           // player3.PlayerStats();
 
             player1.GetStats();
             player2.GetStats();

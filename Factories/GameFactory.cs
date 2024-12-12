@@ -14,8 +14,7 @@ namespace laboratorna2.Factories
             return type switch
             {
                 "Standard" => new StandardGame(opponentName, rating),
-                "Training" => new TrainingGame(opponentName),
-                "OnePlayer" => new OnePlayerGame(opponentName, rating),
+                "Training" => new TrainingGame(opponentName),     
                 _ => throw new ArgumentException("Невідомий тип гри")
             };
         }
